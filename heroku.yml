@@ -3,4 +3,4 @@ build:
     web: Dockerfile
 
 run:
-  web: yarn run start
+  web: yarn run generate
