@@ -13,6 +13,7 @@ COPY ./app/package.json ./app/yarn.lock ./
 RUN yarn install --non-interactive
 
 COPY ./app ./
+RUN chmod 744 /app/start.sh
 
 EXPOSE 3000
 
