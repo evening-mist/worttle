@@ -1,0 +1,14 @@
+.v-card.tile {
+  border-width: 2px !important;
+}
+
+.v-card.tile .v-card__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}

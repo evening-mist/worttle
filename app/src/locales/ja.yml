@@ -1,0 +1,122 @@
+---
+title: Wortle(𝛂)
+
+rooms:
+  id: ルームID
+  lettersCount: 文字数
+  guessesMaxCount: 推測回数
+  seconds: 制限時間(秒)
+
+  invitationUrl: 招待URL
+
+you: あなた
+opponent: 相手
+
+players:
+  name: プレイヤー名
+
+statuses:
+  guessing: 推測中
+  waiting: 待機中
+  win: 勝ち
+  lose: 負け
+  miss: 推測失敗
+  left: 離脱
+  reset: リセット
+  no_contest: 無効試合
+
+texts:
+  description: オンライン対戦型Wordle
+
+  roomCreation: ルームの作成
+
+  roomJoin: ルームへの参加
+  failedToJoinRoom: 'ルーム {id} には参加できません。'
+
+  copiedRoomIdToClipboard: ルームIDをクリップボードにコピーしました。
+  copiedInvitationUrlToClipboard: 招待URLをクリップボードにコピーしました。
+  waitingJoin: 対戦相手の参加を待っています...
+
+  waitingJoinAcceptance: 対戦相手の承認を待っています...
+
+  invalidGuess: '「{guess}」は辞書に含まれていません。'
+
+  passed: パスしました。
+
+  playerWins: '{name}の勝ち!'
+  draw: 引き分けです。
+
+  missed: 相手のお題ワードを推測できませんでした。
+
+  roomLeaveConfirmation: ルーム離脱の確認
+  confirmRoomLeave: 本当にルームから抜けますか?
+  playerHasLeft: '{name}がルームから抜けました。'
+
+  playerHasRequestedGameReset: '{name}がゲームのリセットを希望しました。'
+  resetGame: ゲームがリセットされました。
+
+  help: 遊び方
+  overview: |-
+    このゲームは<a href="https://www.nytimes.com/rooms/wordle/index.html" target="_blank" rel="external nofollow noopener noreferrer">Wordle</a>をオンライン対戦型にしたものです。<br />
+    (Wordle公式のゲームではありません。)<br />
+    <br />
+    お互いのプレイヤーにはそれぞれのお題ワード(英単語)が割り当てられます。<br />
+    交互に推測を繰り返していき，相手のお題ワードを当てれば勝ちです。<br />
+    <b>プレイヤーの推測に対する判定は，自身を含めてお互いのお題ワードについて行われます。</b><br />
+    自分のお題ワードの情報をなるべく晒さずに相手のお題ワードの情報を探りましょう。
+  example: 例
+  examples:
+    correct: '「<b>{letter}</b>」はお題ワードに含まれていて，位置も正しいです。'
+    present: '「<b>{letter}</b>」はお題ワードに含まれていますが，位置が間違っています。'
+    absent: '「<b>{letter}</b>」はお題ワードに含まれていません。'
+  howToStart: ゲームの始め方
+  howToStartSteps:
+    - |-
+      一方のプレイヤーは {room-creation-button} ボタンからルームを作ります。
+      プレイヤー名を入力し，ルームのルール(お題ワードの文字数，お互いのプレイヤーが推測できる回数，推測の制限時間)を選択します。
+    - |-
+      作成されたルームのIDか招待URLをもう一方のプレイヤーに伝えます。
+      {clipboard-button} ボタンをクリックするとルームIDを，{link-button} ボタンをクリックすると招待URLを，それぞれクリップボードにコピーできます。
+    - |-
+      もう一方のプレイヤーは {room-join-button} ボタンからルームに参加します。
+      プレイヤー名とルームIDを入力します。
+      招待URLからアクセスするとルームIDが入力された状態で表示されます。
+    - ルームを作成したプレイヤーはルーム参加を承認します。
+    - ルームを作成したプレイヤーの先攻でゲームが開始されます。
+  resettingAndLeavingRoom: ルームのリセットと離脱
+  resettingAndLeavingRoomDescriptions:
+    - |-
+      ゲームが終了すると，お互いのプレイヤーは {room-reset-request-button} ボタンでルームのリセットを希望できます。
+      双方のプレイヤーがリセットを希望すると，新しいお題ワードでゲームをやり直せます。
+    - |-
+      プレイヤーは {room-leaving-button} ボタンでルームから離脱できます。
+      ページがバックグラウンドになるなどしてしばらく通信が途絶えた場合もルームから離脱します。
+  otherNotes: その他
+  otherNoteItems:
+    - このゲームはJavaScript，スタイルシート，Cookieを利用して動作しています。
+    - このゲームの辞書は<a href="http://www.cefr-j.org/download.html#cefrj_wordlist" target="_blank" rel="external nofollow noopener noreferrer">CEFR-J Wordlist Version 1.6</a>を使用して作成しています。
+
+  settings: 設定
+
+  implementedInFutureUpdate: 将来のアップデートで実装されます(たぶん)。
+
+locale: 言語
+
+darkTheme: ダークテーマ
+
+highContrastTheme: ハイコントラストテーマ
+
+actions:
+  createRoom: ルームを作る
+
+  joinRoom: ルームに参加する
+
+  acceptRoomJoin: ルーム参加を承認する
+
+  leaveRoom: ルームから抜ける
+  notLeave: 抜けない
+
+  cancel: キャンセル
+
+validations:
+  stringLengthMax: '{_field_}は{max}文字以内でないといけません'
