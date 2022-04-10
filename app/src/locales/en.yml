@@ -1,0 +1,143 @@
+---
+title: Wortle(𝛂)
+
+rooms:
+  id: Room ID
+  lettersCount: Letters Count
+  guessesMaxCount: Guesses Count
+  seconds: Time Limit(seconds)
+
+  invitationUrl: Invitation URL
+
+you: You
+opponent: Opp.
+
+players:
+  name: Player Name
+
+statuses:
+  guessing: Guessing
+  waiting: Waiting
+  win: Win
+  lose: Lose
+  miss: Guessing Failure
+  left: Left
+  reset: Reset
+  no_contest: No Contest
+
+copyrightYear: '2022'
+
+texts:
+  description: Online Match Version Wordle
+
+  roomCreation: Room Creation
+
+  roomJoin: Room Join
+  failedToJoinRoom: 'Cannot join room {id}'
+
+  copiedRoomIdToClipboard: Copied Room ID to Clipboard.
+  copiedInvitationUrlToClipboard: Copied Invitation URL to Clipboard.
+  waitingJoin: Waiting Opponent's Join...
+
+  waitingJoinAcceptance: Waiting Opponents"s Join Acceptance...
+
+  invalidGuess: '"{guess}" is not containded in the Dictionary.'
+
+  passed: Passed.
+
+  playerWins: "{name}'s win!"
+  draw: Draw.
+
+  missed: Could not Guess Opponent's Word.
+
+  roomLeaveConfirmation: Room Leave Confirmation
+  confirmRoomLeave: Sure to Leave Room?
+  playerHasLeft: '{name} has left from the room.'
+
+  playerHasRequestedRoomReset: '{name} has requested the room reset.'
+
+  help: How to Play
+  overview: |-
+    This game is online match version of <a href="https://www.nytimes.com/rooms/wordle/index.html" target="_blank" rel="external nofollow noopener noreferrer">Wordle</a>.<br />
+    (Not an official Wordle game.)<br />
+    <br />
+    Each player is assigned their own secret word and repeat the guessing alternately to hit the opponent's word.<br />
+    <b>Judgments on player guesses are made on each player's words, including themselves.</b><br />
+    Let's search for the information of the opponent's word without exposing the information of your own word as much as possible.
+  example: Examples
+  examples:
+    correct: 'The letter "<b>{letter}</b>"" is in the word and in the correct spot.'
+    present: 'The letter "<b>{letter}</b>"" is in the word but in the wrong spot.'
+    absent: 'The letter "<b>{letter}</b>"" is not in the word in any spot.'
+  howToStart: How to Start Game
+  howToStartSteps:
+    - |-
+      One player creates the room from the {room-creation-button} button.
+      They sets their player name and selects rules of the room(the number of letters in the word, the number of times each player can guess, and the time limit for guessing).
+    - |-
+      The player who created a room gives the room ID or the invitation URL to the other player.
+      They can copy the room ID by clicking {clipboard-button} button and the invitation URL by clicking {link-button} button to clipboard.
+      When they access from the invitation URL, the room ID is filled.
+    - |-
+      The other player joins the room from the {room-join-button} button.
+      They sets their player name and the room ID.
+    - The first player accepts the room join.
+    - The game starts with the first player who created the room.
+  resettingAndLeavingRoom: Resetting and Leaving Room
+  resettingAndLeavingRoomDescriptions:
+    - |-
+      When a game finishes, each players can request to reset the room by {room-reset-request-button} button.
+      If both players request resetting, game re-starts with new words.
+    - |-
+      Players can leave room by {room-leaving-button} button.
+      If communication is lost for a while, such as when the page goes to the background, you will leave the room.
+  otherNotes: Other Notes
+  otherNoteItems:
+    - This game runs using JavaScript, stylesheets and cookies.
+    - The dictionary for this game is created using <a href="http://www.cefr-j.org/download.html#cefrj_wordlist" target="_blank" rel="external nofollow noopener noreferrer">CEFR-J Wordlist Version 1.6</a>.
+
+  settings: Settings
+
+  implementedInFutureUpdate: Implemented in a future update, possibly.
+
+locale: Locale
+
+darkTheme: Dark Theme
+
+highContrastTheme: High Contrast Theme
+
+actions:
+  createRoom: Create a Room
+
+  joinRoom: Join a Room
+
+  acceptRoomJoin: Accept Room Join
+
+  leaveRoom: Leave from the Room
+  notLeave: Not Leave
+
+  cancel: Cancel
+
+icons:
+  create: fa-plus fa-fw
+
+  join: fa-sign-in-alt fa-fw
+  leave: fa-sign-out-alt fa-flip-horizontal fa-fw
+
+  reset: fa-redo-alt fa-fw
+
+  clipboard: fa-clipboard fa-fw
+
+  link: fa-link fa-fw
+
+  help: far fa-question-circle fa-fw
+
+  settings: fa-cog fa-fw
+
+  dark: far fa-moon fa-fw
+  light: far fa-sun fa-fw
+
+  close: fa-times fa-fw
+
+validations:
+  stringLengthMax: 'The {_field_} field must have {max} characters at most'
