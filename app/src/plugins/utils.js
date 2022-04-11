@@ -5,7 +5,7 @@ import { themes } from '~/plugins/vuetify.options.js'
 
 const deepEqual = require('deep-equal')
 const deepCopy = require('deepcopy')
-const deepMerge = require('merge-deep')
+const deepMerge = require('deepmerge')
 
 const groupBy = require('lodash.groupby')
 
