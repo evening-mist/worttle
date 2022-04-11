@@ -96,8 +96,8 @@ export default {
 
   pwa: {
     manifest: {
-      name: 'Wortle(𝛂)',
-      short_name: 'Wortle',
+      name: 'Worttle(𝛂)',
+      short_name: 'Worttle',
       description: 'Online Battle Version Wordle',
       theme_color: '#ffffff',
       lang: 'en',
